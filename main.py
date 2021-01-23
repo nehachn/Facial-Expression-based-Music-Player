@@ -46,19 +46,29 @@ while(1):
 
 	k = cv2.waitKey(5) & 0xFF
 	if(answer=="happy" and k==32):
-		os.system("firefox https://www.youtube.com/watch?v=WsptdUFthWI")
+		os.system("open -a firefox https://www.youtube.com/watch?v=WsptdUFthWI")
 
 	if(answer=="sad" and k==32):
-		os.system("firefox https://www.youtube.com/watch?v=hoNb6HuNmU0")
+		os.system("open -a firefox https://www.youtube.com/watch?v=hoNb6HuNmU0")
 
-			# cv2.rectangle(frame,(c1, r1),(c2, r2),(0,255,0),0) 
+	if(answer=="surprise" and k==32):
+		os.system("open -a firefox https://www.youtube.com/watch?v=09R8_2nJtjg")
+
+	if(answer=="angry" and k==32):
+		os.system("open -a firefox https://www.youtube.com/watch?v=QRmKa7vvct4")
+
+	if(answer=="neutral" and k==32):
+		os.system("open -a firefox https://www.youtube.com/watch?v=16v2eojZ_l8")
+
+			
 
 	font=cv2.FONT_HERSHEY_SIMPLEX
 	cv2.putText(frame, answer, (50, 50), font, 1, (0, 255, 255), 2, cv2.LINE_4)
 	cv2.imshow('frame',frame)
 	cv2.imshow('roi', roi)
 
-		# cv2.imshow('frame',frame)
 
 	if k == 27:
+		break
+	if k == 32:
 		break
