@@ -17,6 +17,9 @@ We present a model which eliminates the time-consuming and the tedious work ofma
   Pillow
   
   OpenCV
+  
+# Training dataset
+Training dataset is FER2013, which consists of approx 24 thousand images belonging to 5 different classes namely : Angry, Happy, Neutral, Sad, Surprise.
 
 # Running Code #
 1. To download the dependencies run the following code in terminal: 
