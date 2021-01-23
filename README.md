@@ -2,11 +2,15 @@
 
 
 # Dependencies
-sklearn
-Tensorflow
-Keras
-Pillow
-OpenCV
+  sklearn
+  
+  Tensorflow
+  
+  Keras
+  
+  Pillow
+  
+  OpenCV
 
 # Running Code #
 1. To download the dependencies run the following code in terminal: 
